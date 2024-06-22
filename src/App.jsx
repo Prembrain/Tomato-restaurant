@@ -12,11 +12,7 @@ export default function App(){
   return(
    <div className='w-full font-Outfit bg-white overflow-hidden scroll-smooth'>
     {showLogin ? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
-      {/* <div className={`${styles.paddingX} ${styles.flexCenter}`}> */}
-        {/* <div className={`${styles.boxWidth} fixed top-0 z-10`}> */}
           <Navbar setShowLogin={setShowLogin}/>
-        {/* </div> */}
-      {/* </div> */}
       <div className={`${styles.paddingX} ${styles.flexCenter}  sm:mt-[86.2px] mt-[79.2px]`}>
           <Routes>
             <Route path='/' element={<Home />} />
